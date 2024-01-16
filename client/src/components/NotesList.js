@@ -14,7 +14,13 @@ function NotesList() {
   return (
     <div>
       <h2>Your Notes</h2>
-      {/* We'll render notes here */}
+      <ul>
+        {notes.map((note) => (
+          <li key={note.id}>
+            <strong>{note.title}</strong>: {note.content}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

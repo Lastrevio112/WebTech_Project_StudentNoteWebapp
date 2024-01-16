@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NotesList from './components/NotesList';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <h1>Note Taking App</h1>
       </header>
-      <NotesList />
+      <Dashboard />
     </div>
   );
 }
